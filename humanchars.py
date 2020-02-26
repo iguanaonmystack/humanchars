@@ -21,7 +21,8 @@ def debugprint(l):
     print()
 
 
-debugprint(split('c\u0061\u0301t'))
-debugprint(split('c\u0061\u0305t'))
-debugprint(split('᚛ᚑᚌᚐᚋ᚜'))
-debugprint(split('اَلْعَرَبِيَّةُ'))
+if __name__ == '__main__':
+    debugprint(split('c\u0061\u0301t'))
+    debugprint(split('c\u0061\u0305t'))
+    debugprint(split('᚛ᚑᚌᚐᚋ᚜'))
+    debugprint(split('اَلْعَرَبِيَّةُ'))
