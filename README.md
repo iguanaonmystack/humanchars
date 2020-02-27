@@ -16,3 +16,7 @@ The best I have come up with so far is using unicodedata.normalize() to fix the 
 
 
 <sup>1</sup> Some languages such as Java and JavaScript are also limited by 16-bit character types and have to produce surrogate pairs, which creates more problems, but let's ignore that for now.)
+
+----
+
+Update: the key term here is "extended grapheme cluster", from the Unicode specification at [Annex #29](https://unicode.org/reports/tr29/), as pointed out by @FakeUnicode in a [reply](https://twitter.com/FakeUnicode/status/1232804361861906432). Also, this is implemented by the third party [regex](https://pypi.org/project/regex/) library as r'\X', as pointed out by @dragondave in another [reply](https://twitter.com/dragondave/status/1232885890579681280)
